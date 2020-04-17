@@ -19,15 +19,21 @@ public class Challenges {
 
     /* Create an empty hashSets and populate it with the all the days of the week.
      * Next create a second set and populate it with only the weekend days (SATURDAY and SUNDAY).
-     * Lastly, compare the two sets and retain in the first set only those days that are the same in both sets.
+     * Lastly, compare the two sets and retain in the first set only those days that exist in both sets.
      */
 
     public void challengeOne () {
         HashSet<String> h_set1 = new HashSet<>();
-        h_set1.add("Test");
-        h_set1.add("nope");
+        h_set1.add("Monday");
+        h_set1.add("Tuesday");
+        h_set1.add("Wednesday");
+        h_set1.add("Thursday");
+        h_set1.add("Friday");
+        h_set1.add("Saturday");
+        h_set1.add("Sunday");
         HashSet<String>h_set2 = new HashSet<>();
-        h_set2.add("Test");
+        h_set2.add("Saturday");
+        h_set2.add("Sunday");
         h_set1.retainAll(h_set2);
         System.out.println(h_set1);
     }
@@ -51,8 +57,8 @@ public class Challenges {
     }
 
     /* Create a new class and call it SuperHero. Add fields for Id,Name and Age + getters and setters. Have the class implement the Comparable interface.
-     * Implement the override method and have it compare the AGE of the superhero. Next, create a new arrayList of type SuperHero.
-     * Sort the list by age and print out each element.
+     * Implement the override method and have it compare the Age of the superhero. Next, create a Collection of type SuperHero.
+     * Sort the Collection by Age and print out each element.
      */
 
     public void challengeThree(){
@@ -69,11 +75,11 @@ public class Challenges {
         }
     }
 
-    /* Create an array of type int with numbers: {1,4,4,2,6,7}. Next, create an appropriate Collection and populate
+    /* Create an array of type int with numbers: {1,4,4,2,6,7,7}. Next, create an appropriate Collection and populate
      * it with the content of the int array. Lastly, print out each element in the Collection without duplicates.
      */
     public void challengeFour(){
-        int[] intArray = {1,4,4,2,6,7};
+        int[] intArray = {1,4,4,2,6,7,7};
         Set<Integer> integerSet = new HashSet<>();
         for (int i = 0; i < intArray.length ; i++) {
             integerSet.add(intArray[i]);

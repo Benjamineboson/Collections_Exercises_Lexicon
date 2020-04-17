@@ -52,7 +52,7 @@ Challenges
 
 1. Create an empty set and populate it with the all the days of the week.
    Next create a second set and populate it with ONLY the weekend days (SATURDAY and SUNDAY).
-   Lastly, compare the two sets and retain in the first set only those days that are the same in both sets.
+   Lastly, compare the two sets and retain in the first set only those days that exist in both sets.
 
 
 2. Create a new hashMap of types <String,String> and populate it with elements containing an email (String) and a name (String).
